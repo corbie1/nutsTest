@@ -2,7 +2,7 @@
   "name": "test",
   "version": "1.0.0",
   "description": "Slick",
-  "main": "index.js",
+  "main": "dist/index.html",
   "scripts": {
     "test": "test"
   },
