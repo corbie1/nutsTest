@@ -22,7 +22,7 @@ var mySwiper = new Swiper('.swiper-container', {
   })
 
 // Выравнивание по самому высокому блоку слайдера
-var elements        = document.querySelectorAll('.slide--title');
+var elements        = document.querySelectorAll('.slide__title');
 var numbElements    = elements.length;
 var elementsArray   = [];
 var maxHeight       = 0;

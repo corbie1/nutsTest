@@ -2,8 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body{
     background-color: #f8f8f8;
-
-
+}
+a{
+    text-decoration: none;
+    color: #000000;
 }
 .block{
     overflow: hidden;
@@ -28,20 +30,19 @@ body{
     max-width: 1200px;
     height: auto;
     position: relative;
-    &::before{
-        top:90px;
-        left: -150px;
+    &__title{
         position: absolute;
-        content: 'Статьи';
+        left: -150px;
+        top: 40px;
         font-size: 59px;
         letter-spacing: 4px;
         line-height: 62px;
         color: #dfecf2;
         font-weight: 900;
         font-family: "Montserrat";
-        transform: rotate(-90deg);
+        transform: rotate(270deg);
     }
-    &-slide{
+    &__slide{
         display: flex;
         flex-direction: column;
         height: auto;
@@ -60,26 +61,32 @@ body{
             width: 2px;
             background-color: #e5e5e5;
         }
+        }
     }
     img{
         height: auto;
         width: 100%;
     }
     .slide{
-        &--date{
+        &__date{
             color: #848484;
          }
-         &--text{
+         &__text{
              max-width: 100%;
          }
+         &__title{
+            transition: .2s;
+            &:hover{
+                color: #ffad00;
+        }
     }
 }
 
 @media screen and (max-width: 1335px){
     .swiper{
         max-width: 90vw;
-        &::before{
-            opacity: 0;
+        &__title{
+            visibility: hidden;
         }
         
     }
@@ -91,7 +98,12 @@ body{
            opacity: 0;
         }
     }
-    .slide--title{
+   
+    .slide__title{
         font-size: 14px;
+    }
+    .swiper{
+        padding: unset;
+    
     }
 }
