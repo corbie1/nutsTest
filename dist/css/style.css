@@ -48,9 +48,11 @@ a {
 }
 
 .swiper__title {
+  text-transform: uppercase;
   position: absolute;
-  left: -150px;
-  top: 40px;
+  left: -175px;
+  letter-spacing: 5px;
+  top: 60px;
   font-size: 59px;
   letter-spacing: 4px;
   line-height: 62px;
