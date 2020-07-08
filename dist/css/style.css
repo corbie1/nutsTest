@@ -95,6 +95,11 @@ img {
 }
 
 .slide__date {
+  padding-top: 5px;
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Roboto";
   color: #848484;
 }
 
@@ -132,6 +137,6 @@ img {
   }
 
   .swiper {
-    padding: unset;
+    padding: 10px;
   }
 }
